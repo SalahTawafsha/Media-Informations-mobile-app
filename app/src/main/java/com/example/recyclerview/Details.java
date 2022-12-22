@@ -27,7 +27,7 @@ public class Details extends AppCompatActivity {
         Film f = Film.list[Integer.parseInt(getIntent().getData().toString())];
         image.setImageResource(f.getImageID());
         name.setText(f.getName());
-        year.setText(String.valueOf(f.getYear() ));
+        year.setText(String.valueOf(f.getYear()));
         stars.setText(getStars(f.getStars()));
         description.setText(f.getDescription());
 
