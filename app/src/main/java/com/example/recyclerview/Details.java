@@ -24,23 +24,21 @@ public class Details extends AppCompatActivity {
         stars = findViewById(R.id.film_stars);
         description = findViewById(R.id.film_descriptions);
 
-        for (int i = 0; i < Film.list.length; i++) {
-            if (Integer.parseInt(getIntent().getData().toString()) == Film.list[i].getImageID()) {
-                Film f = Film.list[i];
-                image.setImageResource(f.getImageID());
-                name.setText(f.getName());
-                year.setText(f.getYear()+"");
-                stars.setText(getStars(f.getStars()));
-                description.setText(f.getDescription());
-            }
-        }
+        Film f = Film.list[Integer.parseInt(getIntent().getData().toString())];
+        image.setImageResource(f.getImageID());
+        name.setText(f.getName());
+        year.setText(String.valueOf(f.getYear() ));
+        stars.setText(getStars(f.getStars()));
+        description.setText(f.getDescription());
+
+
     }
 
     private String getStars(String[] stars) {
         StringBuilder s = new StringBuilder();
-        for (int i = 0; i < stars.length; i++) {
-            s.append(stars[i] + ", ");
-        }
+        for (String star : stars)
+            s.append(star).append(", ");
+
         s.delete(s.length() - 3, s.length());
 
         return s.toString();

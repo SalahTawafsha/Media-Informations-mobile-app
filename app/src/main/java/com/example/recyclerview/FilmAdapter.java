@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
@@ -23,6 +24,7 @@ public class FilmAdapter
         this.films = films;
     }
 
+    @NonNull
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         CardView v = (CardView) LayoutInflater.from(parent.getContext()).inflate(R.layout.film_card,
@@ -49,7 +51,7 @@ public class FilmAdapter
 
         cardView.setOnClickListener(v -> {
             Intent intent = new Intent(v.getContext(), Details.class);
-            intent.setData(Uri.parse(films[position].getImageID() + ""));
+            intent.setData(Uri.parse(position + ""));
             v.getContext().startActivity(intent);
         });
     }
