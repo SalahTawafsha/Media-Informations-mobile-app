@@ -9,10 +9,15 @@
         <entry key="..\:/BZU/Comp438(Android)/Projects/RecyclerView/app/src/main/res/font/coming_soon.xml" value="0.15677083333333333" />
         <entry key="..\:/BZU/Comp438(Android)/Projects/RecyclerView/app/src/main/res/layout/activity_details.xml" value="0.2028985507246377" />
         <entry key="..\:/BZU/Comp438(Android)/Projects/RecyclerView/app/src/main/res/layout/activity_main.xml" value="0.2028985507246377" />
-        <entry key="..\:/BZU/Comp438(Android)/Projects/RecyclerView/app/src/main/res/layout/activity_menu.xml" value="0.15625" />
+        <entry key="..\:/BZU/Comp438(Android)/Projects/RecyclerView/app/src/main/res/layout/activity_menu.xml" value="0.264" />
         <entry key="..\:/BZU/Comp438(Android)/Projects/RecyclerView/app/src/main/res/layout/activity_recicler_view.xml" value="0.1265625" />
+        <entry key="..\:/BZU/Comp438(Android)/Projects/RecyclerView/app/src/main/res/layout/activity_tvsh.xml" value="0.15625" />
         <entry key="..\:/BZU/Comp438(Android)/Projects/RecyclerView/app/src/main/res/layout/film_card.xml" value="0.264" />
+        <entry key="..\:/BZU/Comp438(Android)/Projects/RecyclerView/app/src/main/res/layout/film_details.xml" value="0.264" />
+        <entry key="..\:/BZU/Comp438(Android)/Projects/RecyclerView/app/src/main/res/layout/media_card.xml" value="0.2028985507246377" />
         <entry key="..\:/BZU/Comp438(Android)/Projects/RecyclerView/app/src/main/res/layout/splash_screen.xml" value="0.32055961070559613" />
+        <entry key="..\:/BZU/Comp438(Android)/Projects/RecyclerView/app/src/main/res/layout/tv_show_card.xml" value="0.2028985507246377" />
+        <entry key="..\:/BZU/Comp438(Android)/Projects/RecyclerView/app/src/main/res/layout/tv_show_details.xml" value="0.264" />
       </map>
     </option>
   </component>

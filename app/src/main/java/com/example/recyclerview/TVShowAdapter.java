@@ -13,39 +13,38 @@ import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class FilmAdapter
-        extends RecyclerView.Adapter<FilmAdapter.ViewHolder> {
+public class TVShowAdapter extends RecyclerView.Adapter<TVShowAdapter.ViewHolder> {
 
-    private Film[] films;
+    private TVShow[] TVShows;
 
-    public FilmAdapter(Film[] films) {
-        this.films = films;
+    public TVShowAdapter(TVShow[] TVShows) {
+        this.TVShows = TVShows;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public TVShowAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         CardView v = (CardView) LayoutInflater.from(parent.getContext()).inflate(R.layout.media_card,
                 parent,
                 false);
 
-        return new ViewHolder(v);
+        return new TVShowAdapter.ViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(TVShowAdapter.ViewHolder holder, int position) {
         CardView cardView = holder.cardView;
 
         ImageView imageView = cardView.findViewById(R.id.media_image);
-        Drawable dr = ContextCompat.getDrawable(cardView.getContext(), films[position].getImageID());
+        Drawable dr = ContextCompat.getDrawable(cardView.getContext(), TVShows[position].getImageID());
         imageView.setImageDrawable(dr);
 
         TextView name = cardView.findViewById(R.id.media_name);
-        name.setText(films[position].getName());
+        name.setText(TVShows[position].getName());
 
 
         cardView.setOnClickListener(v -> {
-            Intent intent = new Intent(v.getContext(), FilmDetails.class);
+            Intent intent = new Intent(v.getContext(), TVShowDetails.class);
             intent.setData(Uri.parse(position + ""));
             v.getContext().startActivity(intent);
         });
@@ -53,7 +52,7 @@ public class FilmAdapter
 
     @Override
     public int getItemCount() {
-        return films.length;
+        return TVShows.length;
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {

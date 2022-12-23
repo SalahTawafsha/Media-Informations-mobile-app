@@ -7,5 +7,13 @@
     <string name="music">Music</string>
     <string name="sample_descriptions">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</string>
     <string name="sample_stars">Tim Robbins, Morgan Freeman, Bob Gunton</string>
+    <string name="tv_sample_name">SOZ</string>
+    <string name="tv_sample_year">2017</string>
+    <string name="tv_sample_num">84</string>
+    <string name="tv_sample_dur">140</string>
+    <string name="stars">Stars:</string>
+    <string name="description">Description:</string>
+    <string name="number_of_episode">Number of episode:</string>
+    <string name="duration_of_episode">Duration of episode:</string>
 
 </resources>

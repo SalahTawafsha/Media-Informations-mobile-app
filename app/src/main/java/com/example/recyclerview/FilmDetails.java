@@ -2,25 +2,27 @@ package com.example.recyclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class Details extends AppCompatActivity {
-    ImageView image;
-    TextView name;
-    TextView year;
-    TextView stars;
-    TextView description;
+public class FilmDetails extends AppCompatActivity {
+    private ImageView image;
+    private TextView name;
+    private TextView year;
+    private TextView stars;
+    private TextView description;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_details);
+        setContentView(R.layout.film_details);
 
-        image = findViewById(R.id.film_image);
-        name = findViewById(R.id.film_name);
-        year = findViewById(R.id.film_year);
+        image = findViewById(R.id.media_image);
+        name = findViewById(R.id.media_name);
+        year = findViewById(R.id.media_year);
         stars = findViewById(R.id.film_stars);
         description = findViewById(R.id.film_descriptions);
 
@@ -29,7 +31,7 @@ public class Details extends AppCompatActivity {
         name.setText(f.getName());
         year.setText(String.valueOf(f.getYear()));
         stars.setText(getStars(f.getStars()));
-        description.setText(f.getDescription());
+        description.setText(String.valueOf(f.getDescription()));
 
 
     }

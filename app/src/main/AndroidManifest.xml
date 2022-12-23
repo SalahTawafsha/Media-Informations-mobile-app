@@ -16,7 +16,10 @@
             android:name=".Menu"
             android:exported="false" />
         <activity
-            android:name=".Details"
+            android:name=".FilmDetails"
+            android:exported="false" />
+        <activity
+            android:name=".TVShowDetails"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
