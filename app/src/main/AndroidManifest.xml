@@ -16,9 +16,6 @@
             android:name=".Menu"
             android:exported="false" />
         <activity
-            android:name=".ReciclerView"
-            android:exported="false" />
-        <activity
             android:name=".Details"
             android:exported="false" />
         <activity
