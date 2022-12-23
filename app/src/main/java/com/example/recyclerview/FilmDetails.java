@@ -8,11 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class FilmDetails extends AppCompatActivity {
-    private ImageView image;
-    private TextView name;
-    private TextView year;
-    private TextView stars;
-    private TextView description;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -20,11 +15,12 @@ public class FilmDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.film_details);
 
-        image = findViewById(R.id.media_image);
-        name = findViewById(R.id.media_name);
-        year = findViewById(R.id.media_year);
-        stars = findViewById(R.id.film_stars);
-        description = findViewById(R.id.film_descriptions);
+        // local variables since it used just here
+        ImageView image = findViewById(R.id.media_image);
+        TextView name = findViewById(R.id.media_name);
+        TextView year = findViewById(R.id.media_year);
+        TextView stars = findViewById(R.id.film_stars);
+        TextView description = findViewById(R.id.film_descriptions);
 
         Film f = Film.list[Integer.parseInt(getIntent().getData().toString())];
         image.setImageResource(f.getImageID());
